@@ -91,14 +91,14 @@ $('.use').on('click', function () {
 })
 rosford=()=>{
     if(link.textContent=="Use Telephone"){
-    input2.removeAttribute('type','tel')
+    input2.removeAttribute('type')
     input2.setAttribute('type','text')
     if(input2.value.indexOf("@")==-1){
      input2.classList.add("wrinput")       
     }
     else{
         input2.classList.remove("wrinput")
-        input2.removeAttribute('type','text')
+        input2.removeAttribute('type')
         input2.setAttribute('type','tel')
     }
     
