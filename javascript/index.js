@@ -30,6 +30,8 @@ function ops() {
         $('input[type="tel"]').change(function () {
             this.value = $.trim(this.value);
         });
+     
+        
     });
 
 
@@ -89,6 +91,7 @@ $('.use').on('click', function () {
 })
 rosford=()=>{
     if(link.textContent=="Use Telephone"){
+    input2.setAttribute('type','text')
     if(input2.value.indexOf("@")==-1){
      input2.classList.add("wrinput")       
     }

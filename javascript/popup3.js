@@ -12,6 +12,7 @@ input3 = document.querySelector('.hitachi3')
 var letters = "qwertyuioplkjhgfdaszxcvbnməıöğçşü"
 placeholder=localStorage.getItem("Placeholder")
 input2.setAttribute("placeholder",placeholder)
+
 next = function () {
     console.log(placeholder)
     
@@ -53,3 +54,4 @@ var storeDay  = localStorage.getItem("Day")
 $('.hitachi').val(storeName)
 $('.hitachi2').val(storePhone)
 $('.hitachi3').val(storeYear+"/"+storeMonth+"/"+storeDay)
+window.onload = next

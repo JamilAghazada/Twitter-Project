@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="popup-container" onmouseover="next()">
+    <div class="popup-container " >
         <div class="inner">
             <div class="icon-p">
                 <i class="fas fa-times" onclick="before()"></i>
@@ -27,16 +27,17 @@
                 <p class="top1">Step 3 of 5</p>
             </div>
             <p class="top2">Create Account</p>
-            <div class="input">
-                <input type="text" required='required' oninput="next()" style="color: #000" class='hitachi'
+            <div class="input" >
+                <input type="text" required='required' oninput="next()" onforminput="next()" style="color: #000" class='hitachi'
                     placeholder="Name">
+                   
             </div>
             <div class="input">
-                <input type="tel" required='required' oninput="next()" style="color: #000" class='hitachi2'
+                <input type="tel" required='required' oninput="next()" onforminput="next()" style="color: #000" class='hitachi2'
                     placeholder="Telephone">
             </div>
             <div class="input">
-                <input type="text" required='required' oninput="next()" style="color: #000" class='hitachi3'
+                <input type="text" required='required' oninput="next()" onforminput="next()" style="color: #000" class='hitachi3'
                     placeholder="Birth date">
             </div>
             <div class="for-a">
@@ -75,6 +76,9 @@
                     this.value = $.trim(this.value);
                 });
                 $('input[type="tel"]').change(function () {
+                    this.value = $.trim(this.value);
+                });
+                $('input[type="email"]').change(function () {
                     this.value = $.trim(this.value);
                 });
             });
